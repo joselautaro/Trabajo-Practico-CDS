@@ -11,15 +11,15 @@
 <body>
     <fieldset>
         <legend>Trabajo Práctico - C.D.S</legend>
-        <form action="form.php" method="post">
+        <form action="datos.php" method="POST">
             <label for="fecha">Fecha</label>
-            <input type="date" name="fecha" id="Fecha">
+            <input type="date" name="fecha">
             <br>
             <label for="nombre">Nombres</label>
             <input type="text">
             <br>
             <label for="provincia">Provincia</label>
-            <select name="provincias" id="prov">
+            <select name="provincias">
                 <option value="0%">Seleccionar Impuesto</option>
                 <option value="10%">Impuesto 1 (10%)</option>
                 <option value="20%">Impuesto 2 (20%)</option>
@@ -47,6 +47,7 @@
             </table>
             <input type="submit">
         </form>
+        
     </fieldset>
 
 </body>
