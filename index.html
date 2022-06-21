@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico - CDS</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Trabajo Práctico - C.D.S</legend>
+        <form action="form.php" method="post">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="Fecha">
+            <br>
+            <label for="nombre">Nombres</label>
+            <input type="text">
+            <br>
+            <label for="provincia">Provincia</label>
+            <select name="provincias" id="prov">
+                <option value="0%">Seleccionar Impuesto</option>
+                <option value="10%">Impuesto 1 (10%)</option>
+                <option value="20%">Impuesto 2 (20%)</option>
+            </select>
+            <br>
+            <label for="detalle">Detalle</label>
+            <br>
+            <table>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <tr>
+                    <td><input type="text" name="codigo1" id="CodigoProducto"></td>
+                    <td><input type="text" name="nombre1" id="NombreProducto"></td>
+                    <td><input type="text" name="cantidad1" id="CantidadProducto"></td>
+                    <td><input type="text" name="precio1" id="PrecioProducto"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="codigo2" id="CodigoProducto2"></td>
+                    <td><input type="text" name="nombre2" id="NombreProducto2"></td>
+                    <td><input type="text" name="cantidad2" id="CantidadProducto2"></td>
+                    <td><input type="text" name="precio2" id="PrecioProducto2"></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
