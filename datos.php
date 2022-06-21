@@ -7,7 +7,7 @@
     <title>Recepción de datos</title>
 </head>
 <body>
-
+<!-- Se declaran las variables -->
 <?php
 $dia = $_POST['fecha'];
 $nombre = $_POST['nombre'];
@@ -20,6 +20,7 @@ $cantidad_uno = $_POST['cantidad1'];
 $cantidad_dos = $_POST['cantidad2'];
 $precio_uno = $_POST['precio1'];
 $precio_dos = $_POST['precio2'];
+// Se generan los algoritmos
 $primer_cantidad_total = $cantidad_uno + $cantidad_dos;
 $segunda_cantidad_total = $cantidad_uno+ $cantidad_dos;
 $precio_neto = $primer_cantidad_total + $segunda_cantidad_total;
@@ -27,6 +28,7 @@ $valor_de_impuestos = $porcentaje * $precio_neto;
 $precio_total = $precio_neto + $valor_de_impuestos;
 ?>
 
+<!-- Se genera la tabla a desarrollar -->
 <fieldset>
     <legend>Recepción de formulario</legend>
     <table>
